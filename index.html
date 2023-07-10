@@ -100,7 +100,7 @@
 
 // Initialize the Variables
 let songIndex = 0;
-let audioElement = new Audio('Your-Eyes.mp3');
+let audioElement = new Audio('/Your-Eyes.mp3');
 let masterPlay = document.getElementById('masterPlay');
 let myProgressBar = document.getElementById('myProgressBar');
 let gif = document.getElementById('gif');
@@ -109,14 +109,14 @@ let songItems = Array.from(document.getElementsByClassName('songItem'));
 
 
 let songs=[
-    {songName: "Your Eyes", filepath:'Your-Eyes.mp3', coverPath:"https://i.scdn.co/image/ab67616d0000b2737704566a51ab17c885221bde"},
-    {songName: "People", filepath:'People.mp3', coverPath:"https://c.saavncdn.com/607/People-English-2022-20221207081653-500x500.jpg"},
-    {songName: "Unstoppable", filepath:'Unstoppable.mp3', coverPath:"https://i1.sndcdn.com/artworks-000162499586-vifye7-t240x240.jpg"},
-    {songName: "Cheap-Thrills", filepath:'Cheap-Thrills.mp3', coverPath:"https://i.scdn.co/image/ab67616d0000b2737e04bf4a31775b010c6786e1"},
-    {songName: "Faded", filepath:'Faded.mp3', coverPath:"https://upload.wikimedia.org/wikipedia/en/d/da/Alan_Walker_-_Faded.png"},
-    {songName: "Bones", filepath:'BONES.mp3', coverPath:"https://c.saavncdn.com/038/Bones-English-2022-20220311113603-500x500.jpg"},
-    {songName: "Believer", filepath:'Believer.mp3', coverPath:"https://upload.wikimedia.org/wikipedia/en/5/5c/Imagine-Dragons-Believer-art.jpg"},
-    {songName: "Lovely", filepath:'Lovely.mp3', coverPath:"https://c.saavncdn.com/947/lovely-English-2018-20180418150240-500x500.jpg"},
+    {songName: "Your Eyes", filepath:'/Your-Eyes.mp3', coverPath:"https://i.scdn.co/image/ab67616d0000b2737704566a51ab17c885221bde"},
+    {songName: "People", filepath:'/People.mp3', coverPath:"https://c.saavncdn.com/607/People-English-2022-20221207081653-500x500.jpg"},
+    {songName: "Unstoppable", filepath:'/Unstoppable.mp3', coverPath:"https://i1.sndcdn.com/artworks-000162499586-vifye7-t240x240.jpg"},
+    {songName: "Cheap-Thrills", filepath:'/Cheap-Thrills.mp3', coverPath:"https://i.scdn.co/image/ab67616d0000b2737e04bf4a31775b010c6786e1"},
+    {songName: "Faded", filepath:'/Faded.mp3', coverPath:"https://upload.wikimedia.org/wikipedia/en/d/da/Alan_Walker_-_Faded.png"},
+    {songName: "Bones", filepath:'/BONES.mp3', coverPath:"https://c.saavncdn.com/038/Bones-English-2022-20220311113603-500x500.jpg"},
+    {songName: "Believer", filepath:'/Believer.mp3', coverPath:"https://upload.wikimedia.org/wikipedia/en/5/5c/Imagine-Dragons-Believer-art.jpg"},
+    {songName: "Lovely", filepath:'/Lovely.mp3', coverPath:"https://c.saavncdn.com/947/lovely-English-2018-20180418150240-500x500.jpg"},
 ]
 
 songItems.forEach((element, i)=>{

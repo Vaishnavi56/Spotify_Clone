@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@200&family=Nunito:wght@200&display=swap');
+body{
+    background-color:azure;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: 'Hind+Madurai';
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-size: 0.85rem;
+}
+
+nav ul li{
+    padding: 0 12px;
+    padding-left: 0;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.container{
+    min-height: 72.5vh;
+    background-color: black;
+    color: white;
+    font-family: "Hind+Madurai";
+    display: flex;
+    margin: 13px auto;
+    width: 77%;
+    border-radius: 12px;
+    padding: 20px;
+    background-image: url('/crop.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 60% 80%;
+    background-position: center;
+}
+
+.songList{
+    margin-top: 10px;
+}
+.bottom{
+    position: static;
+    height: 70px;
+    background-color: black;
+    color:white;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.icons{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.icons i{
+    cursor: pointer;
+}
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.songItemContainer{
+    margin-top: 30px;
+    /*margin-left: 70px;*/
+}
+
+
+.songItem{
+    height: 40px;
+    display: flex;
+    background-color: white;
+    width: 150%;
+    color: black;
+    margin: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 32px;
+    
+}
+
+.songItem img{
+    width: 40px;
+    margin: 23px;
+    border-radius: 34px;
+}
+.timestamp{
+    margin: 0 25px;
+    cursor: pointer;
+}
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: "Hind+Madurai";
+}
+.songInfo img{
+    opacity: 0;
+    transition: opacity is 0.3s ease-in;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: azure;
+    }
+    .songItemContainer{
+        margin-top: 40px;
+    }
+    .songItem{
+        height: 40px;
+        display: flex;
+        background-color: white;
+        width: 104%;
+        color: black;
+        margin: 10px 0;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 32px;
+    }
+    .container{
+        background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Black_colour.jpg/640px-Black_colour.jpg');
+        width: 80%;
+    }
+  }
+
+
+
+
+
